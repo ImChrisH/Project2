@@ -8,7 +8,7 @@ body {
 
 footer {
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.948);
+    background-color: rgba(255, 255, 255, 0.94);
     width: 80%;
     border-radius:50px;
 }
@@ -20,9 +20,6 @@ footer {
     margin-left:26%;
     width: 200px;
     height: 200px;
-
-    /* animation-name: zoom;
-    animation-duration: 10s; */
     float:left;
 
 }
@@ -99,11 +96,7 @@ footer {
     background-color: rgb(198, 198, 198);
     border-radius: 50px;
     border:6px solid grey;
-    /* animation-name: bannerwrap;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-direction: alternate-reverse; */
+    
     
 }
 
@@ -204,16 +197,16 @@ h1{
     font-family: 'Calibri', sans-serif;
     font-style: italic;
     font-size: 50px;
-    color:white;
+    color: white;
     text-shadow: 3px 3px black;
 }
 
 h2{ 
     font-family: 'Calibri', sans-serif;
     
-    font-size: 20px;
+    font-size: 30px;
     color:white;
-    text-shadow: 3px 3px black;
+    text-shadow: 2.2px 2.2px black;
     
 }
 
@@ -397,14 +390,14 @@ h2{
     width:50%;
     margin: auto;
     font-size: 70px;
-    color:rgb(231, 170, 55);
+    color:wheat;
     text-shadow: 3px 3px black;
     background-color: rgba(188, 64, 64, 0.858);
     /* border: 5px solid grey; */
     border-radius: 30px;
 }
 .modtitle{
-    background-color: rgba(255, 215, 55, 0.425);
+    background-color: rgb(217, 176, 99);
 }
 
 .descriptioncake {
