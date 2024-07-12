@@ -1,0 +1,440 @@
+body {
+    background-color: rgba(62, 62, 68, 0.411);
+    background-image: url(../images/background/bakery.png);
+    height: 100%;
+    overflow-x:hidden;
+
+}
+
+footer {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.948);
+    width: 80%;
+    border-radius:50px;
+}
+
+.logo{
+    /* left:10%; */
+    padding:20px;
+    transition: transform 1s;
+    margin-left:26%;
+    width: 200px;
+    height: 200px;
+
+    /* animation-name: zoom;
+    animation-duration: 10s; */
+    float:left;
+
+}
+
+.logo:hover{
+    transform:scale(1.2);
+    
+}
+
+.logo:active{
+    transform: rotate(45deg);
+}
+
+.bname {
+    position:absolute;
+    left:40%;
+    top:3;
+    height:200px;
+    width:auto;
+    animation-name:v1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    overflow:hidden;
+    
+    
+}
+
+@keyframes v1 {
+    0%, 100%{top:2%;}
+    50%{top:10%}
+    
+}
+
+.bcatch{
+    position:absolute;
+    left:40%;
+    top:3%;
+    height:200px;
+    width:auto;
+    animation-name:v2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    overflow:hidden;
+    
+   
+}
+
+@keyframes v2 {
+    0%, 100%{top:13%;}
+    50%{top:4%}
+    
+}
+
+.superwrap {
+    position: absolute;
+    /* display: flexbox; */
+    /* overflow:hidden; */
+    width: 90%;
+    height:40px;
+    /* justify-content: center; */
+    left:5%;
+    top:25%;
+    /* background-color: yellow; */
+}
+
+.bannerwrap {
+    display:flex;
+    text-align: center;
+    flex-wrap: nowrap;
+    overflow:hidden;
+    white-space: nowrap;
+    /* margin: auto;*/
+    width: 100%;
+    background-color: rgb(198, 198, 198);
+    border-radius: 50px;
+    border:6px solid grey;
+    /* animation-name: bannerwrap;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse; */
+    
+}
+
+/* .banner1:hover{
+    animation-play-state: paused;
+} */
+
+.banner1{
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    height:50px;
+    width:100%;
+    background-color: rgba(0, 128, 0, 0.66);
+    display:inline-block;
+    animation-name:slide;
+    animation-duration:15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    padding:0px;
+    flex-shrink: 0;
+    /* float: left; */
+    animation-direction: alternate-reverse;
+    border-radius: 50px 0px 0px 50px;
+    
+    
+}
+
+.banner2{
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    height:50px;
+    width:100%;
+    background-color: rgb(195, 69, 69);
+    display:inline-block;
+    padding:0px;
+    /* float: left; */
+    flex-shrink: 0;
+    /* margin:0%; */
+    animation-name:slide;
+    animation-duration:15s;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+   
+   
+    
+}
+
+.banner3{
+    /* overflow: hidden; */
+    /* white-space: nowrap; */
+    height:50px;
+    width:100%;
+    background-color: blanchedalmond;
+    display:inline-block;
+    padding:0px;
+    /* float:left; */
+    flex-shrink: 0;
+    animation-name:slide;
+    animation-duration:15s;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    border-radius: 0 50px 50px 0px;
+    
+    
+
+}
+
+p {font-family:'Calibri', sans-serif;
+    font-size:22px;
+    color:white;
+    text-shadow: 2px 2px black;
+    z-index: 2;
+    
+
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-200%)
+    }
+    to {
+        transform: translateX(100%)
+    }
+}
+
+/* @keyframes bannerwrap {
+    from {
+        transform: translateX(-100%)
+    }
+    to {
+        transform: translateX(100%)
+    }
+} */
+
+h1{
+    font-family: 'Calibri', sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    color:white;
+    text-shadow: 3px 3px black;
+}
+
+h2{ 
+    font-family: 'Calibri', sans-serif;
+    
+    font-size: 20px;
+    color:white;
+    text-shadow: 3px 3px black;
+    
+}
+
+.pic{
+    width:90%;
+    border-radius: 50px;
+    border:3px solid rgb(120, 120, 120);
+
+}
+
+.pic2:hover{
+    transform:scale(1.2);
+}
+
+.pic2{
+    width:100%;
+    border-radius: 50px;
+    z-index: -1;
+    border:3px solid white;
+    transition-duration:2s;
+}
+
+.pic3:hover{
+    transform:scale(1.2);
+}
+.pic3{
+    width:100%;
+    border-radius: 50px;
+    border:3px solid white;
+    z-index: -1;
+    transition-duration: 2s;
+}
+
+#pic4, #pic5, #pic6{
+    border-radius: 60px;
+    border:3px solid rgb(208, 135, 0);
+    transition-duration: 1s;
+
+}
+
+#pic4:hover, #pic5:hover, #pic6:hover{
+    transform: scale(1.09);
+    
+}
+
+.intro {
+    position:absolute;
+    margin-top:1%;
+    /* top:400px; */
+    width:100%;
+    top: 30%;
+    left:5%;
+    /* border-radius: 50px; */
+
+}
+
+
+.introwrap {
+    display: flex;
+    /* position: absolute;
+    top:35%; */
+    /* left:10%; */
+    margin:30%;
+    width: 100%;
+
+}
+
+.superwrap2 {
+    display: flex;
+    width: 100%;
+    height:50%;
+    background-color: aliceblue;
+
+}
+
+.intro2wrap{
+    display:flex;
+    position:absolute;
+    /* top: 1400px; */
+    top:35%;
+    left:15%;
+    margin-top:55%;
+    padding:2%;
+    margin-bottom:2%;
+    width:30%;
+    height: auto;
+    /* background-color: aliceblue; */
+}
+
+.intro2 {
+    position:absolute;
+    /* top: 1400px; */
+    top:35%;
+    /* left:15%; */
+    /* margin-top:55%; */
+    padding:2%;
+    margin-bottom:2%;
+    z-index: 0;
+    height: auto;
+}
+
+#intro2text{
+    position: absolute;
+    margin-top:1%;
+    margin-left: -50%;
+    border-radius: 50%;
+    border:3px solid wheat;
+    background-color: rgba(128, 128, 128, 0.718);
+    padding: 8%;
+    transition-duration: 2s;
+    
+}
+
+.intro3wrap{
+    position: absolute;
+    top:35%;
+    left:55%;
+    margin-top:55%;
+    padding:2%;
+    margin-bottom:2%;
+    width:30%;
+    height: auto;
+}
+
+#intro3text{
+    position: absolute;
+    margin-top:-10%;
+    margin-left: -30%;
+    /* margin-right:20%; */
+    border-radius: 50%;
+    border:3px solid wheat;
+    background-color: rgba(128, 128, 128, 0.745);
+    padding: 8%;
+    transition-duration: 2s;
+}
+
+#intro3text:hover, #intro2text:hover {
+    transform:scale(1.2);
+}
+
+.textintro{
+    /* position: absolute; */
+    /* top:85%;
+    left:30%; */
+    z-index: 2;
+    height:auto;
+    width: auto;
+    padding:1%;
+    margin-top:10%;
+    margin-left: 38%;
+    margin-right: 40%;
+    background-color: rgba(190, 55, 34, 0.586);
+    /* margin:8%; */
+    border:4px solid rgb(99, 141, 255);
+    color:wheat;
+    font-family: 'Calibri', sans-serif;
+    font-size: 33px;
+    border-radius: 50px;
+    text-align: center;
+    transition-duration: 1s;
+
+}
+
+.textintro:hover{
+    transform: scale(1.1);
+
+
+}
+
+.giftwrapper {
+    /* position: absolute; */
+    margin-top:30%;
+    margin-left:5%;
+    margin-right:5%;
+    background-color:rgba(121, 121, 121, 0.641);
+    border-radius: 60px;
+    width: 90%;
+}
+
+#choosecake {
+    width:50%;
+    margin: auto;
+    font-size: 70px;
+    color:rgb(231, 170, 55);
+    text-shadow: 3px 3px black;
+    background-color: rgba(188, 64, 64, 0.858);
+    /* border: 5px solid grey; */
+    border-radius: 30px;
+}
+.modtitle{
+    background-color: rgba(255, 215, 55, 0.425);
+}
+
+.descriptioncake {
+    background-color: rgba(62, 62, 66, 0.737);
+    text-shadow:1.5px 1.5px black;
+    border-radius: 20px;
+    padding:3%;
+    border:2px solid white;
+    color:wheat;
+
+}
+
+#botnav{
+    margin-left:42%;
+    margin-right: 41%;
+}
+
+#copyrightme {
+    font-family: 'Calibri', sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.714);
+    text-transform: uppercase;
+
+}
+.linkdecore {
+    color: black;
+    text-decoration: none;
+}
+
+#modbg1, #modbg2, #modbg3{
+    background-color: rgb(92, 92, 92);
+
+}
